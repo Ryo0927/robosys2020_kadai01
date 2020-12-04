@@ -4,8 +4,8 @@
 LED緑1個,黄1個と抵抗2個を使い,入力によってそれぞれのLEDが光り消える,かつ2つのLEDが交互に光る.
 
 ### 動作環境
--Rasberry Pi Model 3B+
--Ubuntu18.04
+- Rasberry Pi Model 3B+
+- Ubuntu18.04
 
 ### 動作
 
