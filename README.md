@@ -33,5 +33,5 @@ $echo [光らせたい動作の番号] /dev/myled0
 
 
 ### demo
-以下が実際に動かした動画のURLです.
+こちらが実際に動かした動画のURLです.
 https://youtu.be/wLo6FI101Yo
