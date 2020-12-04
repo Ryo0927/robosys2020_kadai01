@@ -22,6 +22,7 @@ $echo 4 > /dev/myled0
 2つのLEDが交互に光る
 ```
 ### 回路
+![kairo](https://user-images.githubusercontent.com/54853881/101179140-34429700-368d-11eb-8269-82b362be4ad7.jpg)
 
 
 ### demo
