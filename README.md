@@ -9,7 +9,8 @@ LED緑1個,黄1個と抵抗2個を使い,入力によってそれぞれのLEDが
 
 ### 動作
 
-```$echo 0 > /dev/myled0
+```
+$echo 0 > /dev/myled0
 緑のLEDが光る
 $echo 1 > /dev/myled0       
 緑のLEDが消える
