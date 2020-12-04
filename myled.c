@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-// /*
-// * Copyright(C) 2020 YukiKimura
-//
+/*
+ * Copyright(C) 2020 Yuki Kimura+Ryuichi Ueda.All right reserved.
+*/
 
 
 #include <linux/module.h>
