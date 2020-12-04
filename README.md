@@ -22,11 +22,13 @@ $echo 4 > /dev/myled0
 ```
 ### 実行する手順
 ```
-$git clone https://github.com/yukikimuramura/myled.git
-$cd myled
+$git clone https://github.com/yukikimuramura/robosys2020_kadai01.git
+$cd robosys2020_kadai01
+$make
 $sudo insmod myled.ko
 $sudo chmod 666 /dev/myled0
 $echo [光らせたい動作の番号] /dev/myled0
+$sudo rmmod myled
 ```
 ### 回路
 ![kairo](https://user-images.githubusercontent.com/54853881/101179140-34429700-368d-11eb-8269-82b362be4ad7.jpg)
