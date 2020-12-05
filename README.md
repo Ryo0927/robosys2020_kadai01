@@ -30,10 +30,9 @@ $sudo chmod 666 /dev/myled0
 $echo [光らせたい動作の番号] /dev/myled0
 $sudo rmmod myled
 ```
-### 回路
+### 回路図
 緑のLEDをGPIO25につなげ,黄色のLEDをGPIO26につなげました.
-![kairo](https://user-images.githubusercontent.com/54853881/101179140-34429700-368d-11eb-8269-82b362be4ad7.jpg)
-
+![kairo](https://user-images.githubusercontent.com/54853881/101240727-74108980-3734-11eb-8ad7-f8c7e62d0a45.png)
 
 ### demo
 こちらが実際に動かした動画のURLです.
