@@ -23,12 +23,19 @@ $echo 4 > /dev/myled0
 ### 実行する手順
 ```
 $git clone https://github.com/yukikimuramura/robosys2020_kadai01.git
+リポジトリをクローンする
 $cd robosys2020_kadai01
+リポジトリのディレクトリ内に移動する
 $make
+Makefileを実行しカーネルモジュールを作成する
 $sudo insmod myled.ko
+カーネルモジュールをイントールする
 $sudo chmod 666 /dev/myled0
+誰でも書き込み読み込みができるようにパーミッションを変更する
 $echo [光らせたい動作の番号] /dev/myled0
+実行する
 $sudo rmmod myled
+カーネルモジュールをアンインストールする
 ```
 ### 回路図
 緑のLEDをGPIO25につなげ,黄色のLEDをGPIO26につなげました.
