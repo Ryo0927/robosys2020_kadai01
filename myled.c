@@ -21,7 +21,7 @@ static dev_t dev;
 static struct cdev cdv;
 static struct class *cls = NULL;
 static volatile u32 *gpio_base = NULL;
-static int num[2]={25,26};
+static int num[2] = {25, 26};
 
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
@@ -66,11 +66,11 @@ static int __init init_mod(void)
 	gpio_base = ioremap_nocache(0x3f200000, 0xA0);
 //GPIO 25 out_put mode ON////////////////////////////////////////////////////
 	for(i = 0;i<2;i++){
-	const u32 led = num[i];
-	const u32 index = led/10;
-	const u32 shift = (led%10)*3;
-	const u32 mask = ~(0x7 << shift); //0x7 is 111 
-	gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift); //0x1 is 1
+		const u32 led = num[i];
+		const u32 index = led/10;
+		const u32 shift = (led%10)*3;
+		const u32 mask = ~(0x7 << shift); //0x7 is 111 
+		gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift); //0x1 is 1
 	}
 /////////////////////////////////////////////////////////////////////////////	
 	retval = alloc_chrdev_region(&dev, 0, 1, "myled");
