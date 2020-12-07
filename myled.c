@@ -36,15 +36,15 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		gpio_base[10] = 1 << 25;
 	else if(c == '2')
 		gpio_base[7] = 1 << 26;
-	else if (c == '3')
+	else if(c == '3')
 		gpio_base[10] = 1 << 26;
 	else if(c == '4'){
 		gpio_base[10] = 1 << 25;
 		gpio_base[10] = 1 << 26;
 		for(j=0;j<10;j++){
-			gpio_base[7] = 1 <<25;
+			gpio_base[7] = 1 << 25;
 			msleep(200);
-			gpio_base[10] = 1 <<25;
+			gpio_base[10] = 1 << 25;
 			gpio_base[7] = 1 << 26;
 			msleep(200);
 			gpio_base[10] = 1 << 26;
@@ -58,7 +58,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 
 static struct file_operations led_fops = {
 	.owner = THIS_MODULE,
-	.write = led_write
+	.write = led_write,
 };
 static int __init init_mod(void)
 {
